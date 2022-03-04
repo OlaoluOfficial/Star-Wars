@@ -1,0 +1,127 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  /* box-sizing: border-box; */
+  font-family: 'Star Jedi', arial;
+  font-size: 25px;
+  /* text-shadow: 2px 2px 2px #aaa; */
+}
+html {
+  background: url('https://www.wallpapertip.com/wmimgs/42-420381_star-wars-animated-wallpaper.jpg')
+    no-repeat center/cover fixed;
+  /* background: url('images/star-wars-icegif-8.gif') no-repeat center/cover fixed; */
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  margin: auto;
+  text-align: center;
+}
+
+header img {
+  width: 40%;
+  height: 40%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin: 15px;
+}
+.output {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid #aaa;
+  text-align: center;
+  display: inline;
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  border-radius: 2%;
+  border-style: ridge;
+}
+.class-details {
+  padding-left: 10px;
+}
+.modalButton {
+  /* color: black; */
+  font-size: 15px;
+
+  padding: 3px;
+  color: yellow;
+  background-color: black;
+}
+button:hover {
+  background-color: #333;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-header {
+  height: 20px;
+  width: 87%;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  color: yellow;
+  background-color: black;
+}
+.modal-content {
+  background-color: yellow;
+  padding: 5px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 20% auto;
+  width: 20%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 2s;
+}
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modalCloseBtn {
+  align-items: center;
+  color: black;
+  background-color: yellow;
+}
+footer {
+  margin: 50px 0 0 0;
+  padding: 10px;
+  background-color: steelblue;
+  text-align: center;
+  height: 20%;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
